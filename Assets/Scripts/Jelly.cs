@@ -18,6 +18,7 @@ public class Jelly : MonoBehaviour
         StartCoroutine(GainJellyPerSecond());
     }
 
+    // 1ÃÊ¸¶´Ù °æÇèÄ¡ ¹× Á©¸® È¹µæ
     IEnumerator GainJellyPerSecond()
     {
         while (true)

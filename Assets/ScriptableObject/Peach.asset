@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5824888930bb5440a0b6d6f204b5a52, type: 3}
+  m_Name: Peach
+  m_EditorClassIdentifier: 
+  id: 1
+  price: 200
+  jellyName: Peach
+  sprite: {fileID: 21300000, guid: 932ce8ce7b8fd8e4d9fb9bce6a7e0b7d, type: 3}
+  jellyPrefab: {fileID: 7327131737482060976, guid: 018828297c57186449abd331afff4922, type: 3}

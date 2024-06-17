@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
 
     public RuntimeAnimatorController[] animatorController;
 
+    public JellySO[] jellySO;
+
     private void Awake()
     {
         if (instance == null)
