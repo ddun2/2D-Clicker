@@ -13,6 +13,26 @@ public class StoreSlot : MonoBehaviour
 
     public Button button;
 
+    private GameObject jelly;
+
+    private void Awake()
+    {
+        button = GetComponent<Button>();
+        jelly = GameObject.FindWithTag("Jelly");
+    }
+
+    private void Update()
+    {
+        if (int.Parse(priceText.text) <= GameManager.Instance.gold)
+        {
+            button.interactable = true;
+        }
+        else
+        {
+            button.interactable = false;
+        }
+    }
+
     public void Set(int index)
     {
         button = GetComponent<Button>();
@@ -23,7 +43,9 @@ public class StoreSlot : MonoBehaviour
     }
 
     public void CreateJelly(int index)
-    {
-        Instantiate(GameManager.Instance.jellySO[index].jellyPrefab);
+    {        
+        Instantiate(GameManager.Instance.jellySO[index].jellyPrefab).transform.SetParent(jelly.transform);
+
+        GameManager.Instance.gold -= int.Parse(priceText.text);
     }
 }
